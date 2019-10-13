@@ -11,4 +11,8 @@ HOW:
         o  clean deprecated versions back to N-2 (user-setting)
         o  user configurable N minus threshold
 
-
+CODE:
+    - regions = session.get_available_regions('lambda')   # use this list for audit basis
+    - Each Region:
+        - functions = list-functions()
+        - use1_client.list_versions_by_function
