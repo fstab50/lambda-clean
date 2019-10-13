@@ -1,0 +1,14 @@
+WHAT:
+    - client side runtime to audit aws account lambda functions
+    - display disk space occupied (total)
+    - display number of versions + disk space occupied by each
+    - display disk save if all versions removed except N, N-1, N-2.
+
+HOW:
+    - app functionality:
+        o  list/ describe functions
+        o  list versions, disk space per version
+        o  clean deprecated versions back to N-2 (user-setting)
+        o  user configurable N minus threshold
+
+
